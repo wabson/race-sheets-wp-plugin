@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body {
+         font-size:          small;
+    font-family:        'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    margin: 8px;
+}
+h1 {
+         font-size:          150%;
+}
+table {
+         border:             thin solid black;
+         border-collapse:    collapse;
+         margin-top:         20px;
+         margin-bottom:       20px;
+}
+caption {
+         text-align:         left;
+         font-weight:        bold;
+    margin-bottom: 10px;
+    font-size: 120%;
+}
+th,td {
+         text-align:         left;
+         border:             thin solid gray;
+         padding:            5px;
+}
+td span {
+  display: block;
+}
+td span.notes {
+  font-size:          80%;
+}
+th {
+    background-color:   #eeeeee;
+}
+#results-container {
+  overflow: hidden;
+  margin: 0px 10px;
+}
+#results {
+  position: relative;
+}
+#results-data {
+  visibility: hidden;
+}
+.scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+.scrolling #results-container {
+  margin: 0px 10px;
+}
+.scrolling #results {
+  -webkit-animation: position_results 40s linear 0s infinite normal;
+  -moz-animation: position_results 40s linear 0s infinite normal;
+  -o-animation: position_results 40s linear 0s infinite normal;
+  animation: position_results 40s linear 0s infinite normal;
+}
+@-webkit-keyframes position_results { from { top:0%; } to { top:-100%; }  }
+   @-moz-keyframes position_results { from { top:0%; } to { top:-100%; }  }
+     @-o-keyframes position_results { from { top:0%; } to { top:-100%; }  }
+        @keyframes position_results { from { top:0%; } to { top:-100%; }  }
